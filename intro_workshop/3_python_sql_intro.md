@@ -11,6 +11,7 @@
 4. Run code snippet 1. Does it work? If yes or no make sure to update your github issue
 5. Run code snippet 2. Does it work? If yes or now make sure to update your github issue
 6. What is the difference between code snippet 1 and 2?
+7. Finalize your comments in your issue and close it
 
 # Code Snippet - SQL Only
 
@@ -21,21 +22,18 @@ path_root = os.path.abspath("")
 path_db = os.path.join(root_path, "chinook.db")
 
 engine = create_engine(f'sqlite:///{path_db}')
-results = engine.execute("select count(*) from invoice_items")
+
+sql = "select count(*) from invoice_items"
+results = engine.execute(sql)
 results.fetchall()
 ```
 
 # Code Snippet 2 - SQL + Pandas
 
 ```python 
-from sqlalchemy import create_engine
+import pandas
 
-path_root = os.path.abspath("")
-path_db = os.path.join(root_path, "chinook.db")
-
-engine = create_engine(f'sqlite:///{path_db}')
-results = engine.execute("select count(*) from invoice_items")
-results.fetchall()
+sql = "select count(*) from invoice_items"
+df = pandas.read_sql(sql, con=engine)
+df
 ```
-
-# Moving forward
