@@ -8,7 +8,7 @@
 
 1. Install git on your PC. Windows: https://git-scm.com/download/win
 2. Create a user account on github: https://github.com/
-3. Create a task (do git setup exercise) and assign to yourself here https://github.com/acivitillo/python_data_products_workshop/issues
+3. Create a task  named "do git setup exercise" here https://github.com/acivitillo/python_data_products_workshop/issues. You can do it by openning issue: Click link mentioned above --> New Issue --> Give it a title ;)
 4. Fork https://github.com/acivitillo/python_data_products_workshop
 5. Git clone your fork into your local pc
 6. Update the markdown file `submissions` inside `intro_workshop` folder by adding a sentence about you with your username
