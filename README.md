@@ -22,3 +22,6 @@ Do not let the programming part of Python scare you, we want to specifically add
 
 Please create a github account and file your questions in the issue tracker of this repository here: https://github.com/acivitillo/python_data_products_workshop/issues
 
+
+#BOOKS AND RESOURCES:
+https://automatetheboringstuff.com/
