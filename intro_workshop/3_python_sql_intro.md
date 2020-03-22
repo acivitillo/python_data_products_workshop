@@ -6,7 +6,7 @@
 # Steps
 
 1. Create a task for yourself for this exercise
-2. Get your sqlite `chinook.db` from here: https://www.sqlitetutorial.net/sqlite-sample-database/
+2. Get your sqlite `chinook.db` from here: https://www.sqlitetutorial.net/sqlite-sample-database/  move downloaded file, to your user folder. On Windows: C:\Users\UserName
 3. Read the diagram of the page above, what do you see? Write your considerations inside your github issue
 4. Run code snippet 1. Does it work? If yes or no make sure to update your github issue
 5. Run code snippet 2. Does it work? If yes or now make sure to update your github issue
@@ -19,7 +19,7 @@
 from sqlalchemy import create_engine
 
 path_root = os.path.abspath("")
-path_db = os.path.join(root_path, "chinook.db")
+path_db = os.path.join(root_path,"chinook", "chinook.db")
 
 engine = create_engine(f'sqlite:///{path_db}')
 
