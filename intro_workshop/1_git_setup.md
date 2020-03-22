@@ -6,15 +6,46 @@
 
 # Steps
 
-1. Install git on your PC. Windows: https://git-scm.com/download/win
-2. Create a user account on github: https://github.com/
-3. Create a task  named "do git setup exercise" here https://github.com/acivitillo/python_data_products_workshop/issues. You can do it by openning issue: Click link mentioned above --> New Issue --> Give it a title ;)
-4. On github.com click `Fork`. This will replicate the master repository into your account
-5. Clone your repository to your local pc by typing `git clone [your git link here]` in your command line (`cmd` on windows)
-6. Add your sentence to submissions.txt (you can use the standard notebook application on your pc)
-7. Inside the terminal do `git add .` then `git commit -m "first commit"` then `git push`
-8. Finally go back to github.com. Go to `pull requests` and click `create pull request`
-9. Close your task on the issue tracker
+**Note** git is very simple although it might look complicated now if you are a beginner. Git steps are always the same you:
+
+* Copy (fork & clone) an existing repository (repository = folders)
+* Change (add, commit) the data in your local copy
+* Push the changes to your remote copy
+* Send (pull request) the changes over the original master repository
+
+### 1) Install git to your PC and create a user account on github.com
+* Install git on your PC. Windows: https://git-scm.com/download/win
+* Create a user account on github: https://github.com/
+* Create a task  named "do git setup exercise" here https://github.com/acivitillo/python_data_products_workshop/issues. You can do it by openning issue: Click link mentioned above --> New Issue --> Give it a title ;)
+
+### 2) Fork & Clone
+* On github.com click `Fork`. This will replicate the master repository into your account
+    ![Fork](../static/images/fork.png)
+* Go back to your respository on github.com and copy the git link
+    ![git clone](../static/images/git_clone.png)
+* Go to your PC and start your terminal (`cmd` on Windows)
+* Clone your repository to your local pc by typing `git clone [your git link here]` in your terminal
+
+What has happened? You created a copy of the master repository into your github account. You now have a full copy of the code, docs and files into 2 places 1) your github.com account; 2) your local pc.
+
+### 3) Change, Commit
+* Add your sentence to submissions.txt (you can use the standard notebook application on your pc)
+* do `git add .` 
+    ![git add](../static/images/git_add.png)
+* then `git commit -m "first commit"` 
+    ![git commit](../static/images/git_commit.png)
+
+### 4) Push
+* Push from your local PC to your remote repository in github.com `git push`
+    ![git push](../static/images/git_push.png)
+
+### 5) Create a Pull Request (send your changes to the master repo)
+* On github.com go to `pull requests` and click `new pull request`
+    ![git PR](../static/images/git_pr.png)
+* Then click `create pull request`. **Note** make sure the repo on the right is yours and then one on the left is the master repo
+    ![git PR](../static/images/git_create_pr.png)
+### 6) Finally
+* Close your task on the issue tracker
 
 # Moving forward
 
