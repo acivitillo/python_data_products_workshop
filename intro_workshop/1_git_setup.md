@@ -9,11 +9,11 @@
 1. Install git on your PC. Windows: https://git-scm.com/download/win
 2. Create a user account on github: https://github.com/
 3. Create a task  named "do git setup exercise" here https://github.com/acivitillo/python_data_products_workshop/issues. You can do it by openning issue: Click link mentioned above --> New Issue --> Give it a title ;)
-4. Fork https://github.com/acivitillo/python_data_products_workshop
-5. Git clone your fork into your local pc
-6. Update the markdown file `submissions` inside `intro_workshop` folder by adding a sentence about you with your username
-7. Create a pull request (PR)
-8. Submit pull request to me
+4. On github.com click `Fork`. This will replicate the master repository into your account
+5. Clone your repository to your local pc by typing `git clone [your git link here]` in your command line (`cmd` on windows)
+6. Add your sentence to submissions.txt (you can use the standard notebook application on your pc)
+7. Inside the terminal do `git add .` then `git commit -m "first commit"` then `git push`
+8. Finally go back to github.com. Go to `pull requests` and click `create pull request`
 9. Close your task on the issue tracker
 
 # Moving forward
