@@ -12,7 +12,7 @@ import json
 import pandas as pd
 
 ROOT_PATH = pathlib.Path().absolute()
-FILES_PATH = os.path.join(ROOT_PATH, 'rafalr/files')
+FILES_PATH = os.path.join(ROOT_PATH, 'project_submissions/airly_sensors/files/datafiles')
 
 airly_file = os.path.join(FILES_PATH, 'klobuck_szkolna_airly.json')
 
@@ -41,8 +41,8 @@ class Airly:
             for pair in values:
                 di_name_value[pair['name']] = pair['value']
             li = [
-                one_measure['fromDateTime'],
-                one_measure['tillDateTime'],
+                pd.to_datetime(one_measure['fromDateTime'].replace(':00Z', ':00.000Z'), utc=True),
+                pd.to_datetime(one_measure['tillDateTime'].replace(':00Z', ':00.000Z'), utc=True),
                 di_name_value['PM1'],
                 di_name_value['PM10'],
                 di_name_value['PM25'],
@@ -83,10 +83,12 @@ class Airly:
     def import2df(self):
         self._measurements_list = self._json_rows2array()
         result = self._create_df()
-        print(result)
-        # return result
+        return result
 
 
 klobuck_file = Airly(airly_file)
 df = klobuck_file.import2df()
+start = '2019-01-02'
+end = '2019-01-04'
+df = df[(df['from'] > start) & (df['from'] < end)]
 print(df)
