@@ -1,9 +1,10 @@
 import pandas
 import sqlite3
+import config
 
 
 def db_connect():
-    conn = sqlite3.connect("/Users/user/PY_workshop/ex3_db/chinook.db")
+    conn = sqlite3.connect(config.DB_PATH)
     return conn
 
 

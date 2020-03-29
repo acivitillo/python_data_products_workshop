@@ -37,5 +37,16 @@ def bar():
                            values=bar_values)
 
 
+@app.route('/customer_invoices')
+def customer_invoices():
+    #create dropdown of customers
+    #user selects dropdown
+    #user clicks submit
+    #graph changes to customer invoice by month
+    
+    #use python Altair
+    #run sql dinamically
+    pass
+
 if __name__ == '__main__':
    app.run(host='0.0.0.0', port=8080)
