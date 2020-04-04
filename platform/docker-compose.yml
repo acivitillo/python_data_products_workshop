@@ -1,0 +1,32 @@
+#Connection issues to postgres: https://github.com/docker-library/postgres/issues/297
+version: '3'
+services:
+    jupyter-lab:
+        image: base_notebook:latest
+        ports:
+            - "8888:8888"
+        build: .
+    sqlpad:
+        image: sqlpad/sqlpad
+        volumes:
+            #- Path\to\local\folder:/var/lib/sqlpad
+            - C:\Users\eg013949\acoe_projects\sqlpad:/var/lib/sqlpad
+        environment:
+            - SQLPAD_DEBUG=TRUE
+        ports:
+            - "3000:3000"
+    postgres:
+        image: postgres:12.2-alpine
+        volumes:
+            #- /my/own/datadir:/var/lib/postgresql/data
+            - C:\Users\eg013949\acoe_projects\postgres:/var/lib/postgresql/data
+        ports:
+            - "5432:5432"
+        restart: always
+        environment:
+          POSTGRES_PASSWORD: 123
+          POSTGRES_USER: postgres
+    metabase:
+        image: metabase/metabase
+        ports:
+            - "8080:3000"
