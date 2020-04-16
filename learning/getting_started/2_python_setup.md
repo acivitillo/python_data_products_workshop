@@ -11,9 +11,9 @@
 3. Open up your command line (on Windows type `cmd`)
 4. Type `jupyter lab`
 5. Inside jupyter lab type `print("hello world")` and execute
-6. Close your task
+6. Close your task on GitHub
 
 # Moving forward
 
 * Use jupyter lab for now, don't get too fancy with Python IDEs
-* Watch jupyter lab videos on youtube
+* Watch this intro video to jupyterlab: https://www.youtube.com/watch?v=ctOM-Gza04Y

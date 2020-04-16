@@ -4,6 +4,7 @@ import config
 
 
 def db_connect():
+    print(config.DB_PATH)
     conn = sqlite3.connect(config.DB_PATH)
     return conn
 

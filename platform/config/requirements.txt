@@ -1,7 +1,9 @@
 #container
+psycopg2
 pyodbc
 pyarrow
 wkhtmltopdf
+flask
 #grizly
 boto>=2.49.0
 boto3>=1.9.200
